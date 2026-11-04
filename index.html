@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ravenfield Beta 5 — Web Port by bylhick=roman</title>
+<style>
+  :root { --bg:#0d0f13; --card:#151922; --accent:#3d7bfd; --text:#e8ecf4; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: var(--bg); color: var(--text);
+    min-height: 100vh; display: flex; align-items: center; justify-content: center;
+    background-image: radial-gradient(ellipse at 30% 20%, #16202e 0%, var(--bg) 60%);
+    padding: 24px;
+  }
+  .card {
+    max-width: 680px; padding: 48px 40px; text-align: center;
+    background: var(--card); border-radius: 16px; border: 1px solid #232a38;
+    box-shadow: 0 24px 60px rgba(0,0,0,.5);
+  }
+  h1 { font-size: 42px; font-weight: 800; letter-spacing: 2px; }
+  .beta { color: var(--accent); font-size: 20px; font-weight: 600; margin: 6px 0 8px; }
+  .author { font-size: 14px; color: #8fa3c8; margin-bottom: 28px; }
+  .author b { color: #cfe0ff; }
+  p.lead { color: #aab4c5; line-height: 1.6; margin-bottom: 32px; }
+  .play {
+    display: inline-block; padding: 16px 64px; font-size: 20px; font-weight: 700;
+    color: #fff; background: var(--accent); border-radius: 10px;
+    text-decoration: none; letter-spacing: 1px;
+    transition: transform .15s, box-shadow .15s;
+    box-shadow: 0 8px 24px rgba(61,123,253,.35);
+  }
+  .play:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(61,123,253,.5); }
+  .notes { margin-top: 36px; font-size: 13px; color: #77839a; line-height: 1.8; text-align: left; }
+  .notes b { color: #aab4c5; }
+  .notes code { background:#1c2331; border:1px solid #2a3347; border-radius:4px; padding:1px 6px; color:#cfe0ff; font-size:12px; }
+  .flags { display:flex; gap:8px; justify-content:center; margin-top:20px; flex-wrap: wrap; }
+  .flag { font-size: 12px; padding: 4px 12px; border-radius: 20px; background:#1c2331; color:#8fa3c8; border:1px solid #2a3347; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <h1>RAVENFIELD</h1>
+    <div class="beta">Web Port — Beta 5</div>
+    <div class="author">порт: <b>bylhick=roman</b></div>
+    <p class="lead">
+      Полная версия Ravenfield (ранняя бета-5), запущенная в браузере через WebGL.<br>
+      Без установки — карты Island и Dustbowl, боты, техника.
+    </p>
+    <a class="play" href="game.html">▶ Играть</a>
+    <div class="flags">
+      <span class="flag">2 карты: Island и Dustbowl</span>
+      <span class="flag">Боты</span>
+      <span class="flag">Техника</span>
+      <span class="flag">Физика рэгдоллов</span>
+    </div>
+    <div class="notes">
+      <b>Первый запуск:</b> скачивание ~90 МБ (дальше браузер кэширует — вход быстрый).<br>
+      <b>F2</b> — переключатель оптимизации (по умолчанию <b>включена</b>). Индикатор и <b>FPS</b> — в левом верхнем углу.<br>
+      <b>Как играть:</b> выбери карту в меню, нажми «Start», затем кликни по экрану — мышь захватится. <code>Esc</code> — пауза.<br>
+      <b>Кредиты:</b> оригинал — SteelRaven7 (Ravenfield, бесплатная Beta 5). Порт — <b>bylhick=roman</b>. Неофициальная фанатская сборка.
+    </div>
+  </div>
+</body>
+</html>
