@@ -1,0 +1,5 @@
+*.unityweb binary
+*.png binary
+*.ico binary
+*.js text
+*.html text
